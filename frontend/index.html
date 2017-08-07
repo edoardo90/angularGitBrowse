@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example - example-heroComponentSimple-production</title>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="index.js"></script>
+    <script src="./services/gitApiFetcher.js"></script>
+    <script src="./components/repoDetail.js"></script>
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+
+
+</head>
+
+
+<body ng-app="gitApp">
+
+<div ng-controller="MainCtrl as ctrl">
+    <div class="repo-git-app">
+        <input type="text" id="git-search-box" ng-model="ctrl.userId">
+        <button ng-click="ctrl.searchRepos(ctrl.userId)"> Search</button>
+
+        <div ng-repeat="repo in ctrl.repos">
+            <repo-detail repo="repo"></repo-detail>
+        </div>
+
+    </div>
+
+
+</div>
+</body>
+
+
+</html>
