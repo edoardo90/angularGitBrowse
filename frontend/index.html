@@ -20,9 +20,10 @@
     <div class="repo-git-app">
         <input type="text" id="git-search-box" ng-model="ctrl.userId">
         <button ng-click="ctrl.searchRepos(ctrl.userId)"> Search</button>
-
-        <div ng-repeat="repo in ctrl.repos">
-            <repo-detail repo="repo"></repo-detail>
+        <div class="repo-list">
+            <div ng-repeat="repo in ctrl.repos" class="repo-recap">
+                <repo-detail repo="repo"></repo-detail>
+            </div>
         </div>
 
     </div>

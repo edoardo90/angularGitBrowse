@@ -43,8 +43,8 @@ function extractDataFromRepoList(repoList) {
         description: detailedRepo.description,
         language: detailedRepo.language,
         forksUrl: detailedRepo.url,
-        starsCount: detailedRepo.stargazers_count
-
+        starsCount: detailedRepo.stargazers_count,
+        forkCount: 0
     }));
 
     return repos;

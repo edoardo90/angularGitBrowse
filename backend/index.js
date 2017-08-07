@@ -22,9 +22,27 @@ app.get("/user-repos", function (req, res) {
         .then(repoList => {
             res.status(200).send(repoList);
         })
-        .catch(err  => {
-            console.log(`err while fetching repos for user: ${user} - err: `, err);
-            res.status(500).send({err: "could not fetch repos"});
+        .catch(err => {
+            console.log(`______________ err while fetching repos for user: ${user} - err: `, err);
+
+            const mockData =
+                [{
+                    name: "my lovely name",
+                    description: "d1 this repo is intended to ...  asd asd asd lol ",
+                    language: "C",
+                    starsCount: 12,
+                    forkCount: 30
+                },
+                    {
+                        name: "my other name",
+                        description: "D - two -  this repo is intended to ...  asd asd asd lol ",
+                        language: "Java",
+                        starsCount: 23,
+                        forkCount: 5
+                    }
+                ]
+
+            res.status(200).send(mockData);
         })
 
 })
