@@ -19,4 +19,10 @@ npm install
 npm start
 ```
 
+Should npm start raise error, just manually launch
+```node_modules/http-server/bin/http-server```
+
+Or just ```http-server```  if installed globally   (```npm install --global http-server```)
+
 Then open your favorite browser and head to ```localhost:8080```
+May change according to your system, check the console
