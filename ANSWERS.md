@@ -4,25 +4,25 @@ I spent about 6 hours, this because I wanted to finish the task without giving u
 
 > What would you add to your solution if you had more time?
 
-- I would add more controls for corner cases, for instance Http errors, more logs and clearer.
+- I would add more controls for corner cases, for instance, Http errors, more logs and clearer.
 
 - I would go on with the frontend, I didn't put icons for number of forks and number of stars.
 
 - Maybe some unit tests
  
-- I would take care more of resposiveness
+- I would take care more of responsiveness
  
 > If you didn't spend much time on the coding test then use this as an opportunity to explain what you would add.
 
-I spent even more then I was supposed to, but I enjoyed the challenge
+I spent even more than I was supposed to, but I enjoyed the challenge
 
 
 > How would you improve the application's performance?
 
 The bottleneck of this application is given by the backend, because the frontend, basically just displays what the backend sends it.
-For this reason I would focus on the backend.
+For this reason, I would focus on the backend.
 
-I haven't tested it, but according to Git Api website, using GraphQL it is possible to execute a query taylored on developer's need, in this way time spent for network requests would be consistently reduced because:
+I haven't tested it, but according to Git API website, using GraphQL it is possible to execute a query tailored to developer's need, in this way time spent for network requests would be consistently reduced because:
 
  - a single request is done instead of several
  - only the actually needed data are downloaded
